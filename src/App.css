@@ -1,0 +1,237 @@
+/* 
+.moviesCard{
+  display: flex;
+      --modifier: calc(70ch - 100%);
+      display: flex;
+      flex-wrap: wrap;
+    }
+   */
+/* //////////////////////////////////////////////////////////////////// */
+:root {
+  margin-top: 150px;
+  --bg: #111111;
+  --bg-secondary: #1b1b1b;
+  --typography: #d1d1d1;
+  --typography-primary: #24752f;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background: var(--bg);
+  color: var(--typography);
+}
+
+/* typography */
+.title {
+  color: var(--typography-primary);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* container */
+.container {
+  max-width: 85vw;
+  margin: auto;
+}
+
+/* navbar */
+.navbar {
+  margin-top: -150px;
+  background: var(--bg-secondary);
+  width: 100%;
+  position: fixed;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  
+}
+.nav-title {
+  color: var(--typography-primary);
+  font-size: 1.2rem;
+  text-decoration: none;
+  outline: none;
+}
+.nav-title img {
+  height: 50px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 3rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+.Nav-title{
+  font-size: 30px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.nav-links a:hover {
+  color: var(--typography-primary);
+}
+.navbar .active {
+  color: var(--typography-primary);
+}
+/* characters */
+.characters {
+  margin: 0rem 0rem;
+}
+.loader {
+  display: grid;
+  place-items: center;
+  height: 70vh;
+}
+.character-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  flex-direction: column;
+  align-items: center;
+}
+.character-card {
+  background: var(--bg-secondary);
+  display: flex;
+  width: 50%;
+  margin: 1rem 0rem;
+  
+}
+.character-img {
+  width: 35%;
+  height: 300px;
+}
+.character-details {
+  padding: 0rem 1.5rem;
+  width: 65%;
+}
+.character-title {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+  color: var(--typography-primary);
+  font-weight: bold;
+  text-align: center;
+}
+.detail-group {
+  padding: 0.4rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.detail-title {
+  width: 47.5%;
+  text-align: right;
+}
+.detail-data {
+  width: 47.5%;
+}
+
+/* search */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+.search-bar {
+  width: 30%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--typography);
+  background: none;
+  border: 2px solid var(--typography-primary);
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+/* episodes */
+.episodesList {
+  margin: 2rem 0rem;
+}
+.season:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.season-title {
+  color: var(--typography-primary);
+  margin-bottom: 2rem;
+  width: 70%;
+  margin: auto;
+}
+.episode {
+  margin: 1rem auto;
+  width: 70%;
+  background: var(--bg-secondary);
+  padding: 1rem;
+  display: flex;
+}
+.episode-number {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-right: 1px solid var(--typography-primary);
+  margin-right: 1rem;
+}
+.episode-number span {
+  margin: 0.5rem 0rem;
+}
+.episode-details {
+  width: 85%;
+}
+.episode-detail-group {
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+.episode-detail-title {
+  width: 20%;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.episode-detail-data {
+  width: 80%;
+}
+
+/* quotes */
+.quotestList {
+  margin: 2rem 0rem;
+}
+.quote {
+  max-width: 50%;
+  margin: 1rem auto;
+  background: var(--bg-secondary);
+  padding: 1rem;
+}
+.quotation {
+  font-size: 2rem;
+  padding: 0rem 0.3rem;
+}
+.quote-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+.quote-author {
+  margin-left: 0.5rem;
+}
